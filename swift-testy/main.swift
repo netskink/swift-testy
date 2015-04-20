@@ -9,5 +9,21 @@
 import Foundation
 
 println("Hello, World!")
-println("Hello, John")
+
+// Using chaper1.swift
+let chaulky = Dog(whatadogsays: "woof")
+chaulky.bark()
+chaulky.sit()
+
+// integers are objects?
+let sum = 1 + 2
+let x = 1.successor()
+println(x)
+
+let y = "hello".generate()
+
+1.sayHello()
+go()
+
+
 
