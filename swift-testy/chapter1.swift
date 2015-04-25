@@ -12,7 +12,8 @@ class Dog {
     
     var name = ""
     private var whatadogsays = ""
-    init(whatadogsays:String) {
+    // use _ to hide the external name requirement
+    init(_ whatadogsays:String) {
         self.whatadogsays=whatadogsays
     }
     func bark() {
@@ -26,6 +27,20 @@ class Dog {
     func speak() {
         // self is optional
         self.bark()
+    }
+
+    func say(s:String = "woof", times:Int = 1) {
+        for _ in 1...times {
+            println(s)
+        }
+    }
+
+    // Demonstrates named parms and default/optional parms
+    // If times is not supplied it defaults to 1
+    func say2(s:String = "woof", times:Int = 1) {
+        for _ in 1...times {
+            println(s)
+        }
     }
 }
 
